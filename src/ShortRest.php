@@ -2,6 +2,8 @@
 
 namespace JMichaelWard\ShortRest;
 
+use JMichaelWard\ShortRest\ApiService\ConfigurationContract;
+
 /**
  * Main class for initializing request handlers for short REST.
  */
@@ -9,12 +11,12 @@ class ShortRest {
 	/**
 	 * Configuration for the custom API.
 	 */
-	private ApiConfigurationContract $api_config;
+	private ConfigurationContract $api_config;
 
 	/**
-	 * @param ApiConfigurationContract $api_config
+	 * @param ConfigurationContract $api_config
 	 */
-	public function __construct( ApiConfigurationContract $api_config ) {
+	public function __construct( ConfigurationContract $api_config ) {
 		$this->api_config = $api_config;
 	}
 
@@ -28,7 +30,7 @@ class ShortRest {
 			return;
 		}
 
-		$this->respond();
+		$this->api_config->respond();
 	}
 
 	/**
