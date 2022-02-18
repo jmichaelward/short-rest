@@ -1,8 +1,6 @@
 <?php
 /**
  * Bootstrap the short rest process.
- *
- * Implementations that want to require
  */
 
 if ( ! isset( $_SERVER['HTTP_X_SHORT_REST'] ) ) {
