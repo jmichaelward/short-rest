@@ -7,6 +7,18 @@ namespace JMichaelWard\ShortRest;
  */
 class ShortRest {
 	/**
+	 * Configuration for the custom API.
+	 */
+	private ApiConfigurationContract $api_config;
+
+	/**
+	 * @param ApiConfigurationContract $api_config
+	 */
+	public function __construct( ApiConfigurationContract $api_config ) {
+		$this->api_config = $api_config;
+	}
+
+	/**
 	 * Initialize the Short REST process.
 	 *
 	 * @return void
