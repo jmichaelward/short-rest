@@ -1,0 +1,19 @@
+{
+    "name": "jmichaelward/short-rest",
+    "description": "A library to facilitate development of SHORTINIT REST APIs in WordPress.",
+    "autoload": {
+        "psr-4": {
+            "JMichaelWard\\ShortRest\\": "src/"
+        },
+        "files": [
+            "short-rest.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Jeremy Ward",
+            "email": "jeremy@jmichaelward.com"
+        }
+    ],
+    "require": {}
+}
