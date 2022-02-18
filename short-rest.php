@@ -11,7 +11,7 @@ if ( ! isset( $_SERVER['HTTP_X_SHORT_REST'] ) ) {
 
 if (
 	! defined( 'SHORT_REST_KEY' )
-	&& SHORT_REST_KEY !== filter_var( $_SERVER['HTTP_X_SHORT_REST'], FILTER_SANITIZE_STRING )
+	|| SHORT_REST_KEY !== filter_var( $_SERVER['HTTP_X_SHORT_REST'], FILTER_SANITIZE_STRING )
 ) {
 	return;
 }
