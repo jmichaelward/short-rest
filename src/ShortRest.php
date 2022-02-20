@@ -33,10 +33,10 @@ class ShortRest {
 		$endpoint = $this->api_config->get_endpoint();
 
 		if ( ! $endpoint->authenticate() ) {
-			wp_send_json_error( [] );
+			$endpoint->error();
 		}
 
-		$endpoint->respond();
+		$endpoint->success();
 	}
 
 	/**
