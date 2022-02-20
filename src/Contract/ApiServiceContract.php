@@ -6,7 +6,7 @@ interface ApiServiceContract {
 	/**
 	 * Returns an endpoint object.
 	 *
-	 * @return Endpoint
+	 * @return EndpointContract
 	 */
-	public function get_endpoint(): Endpoint;
+	public function get_endpoint(): EndpointContract;
 }
